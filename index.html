@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.js">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <div id="someID">
+        <button id="btn" onclick="change();">Click Me</button>
+     <p id="p1">Count Me</p>
     
+    </div>
+    <script>
+    function change() {
+        let text = document.getElementById('p1').innerHTML
+        if (text === "Count Me"){
+    document.getElementById('p1').innerHTML = "Stop Counting"
+      } else if (text === "Stop Counting") {
+    document.getElementById('p1').innerHTML = "Count Me"
+      }
+    }
+    </script>
+
+
 </body>
 </html>
